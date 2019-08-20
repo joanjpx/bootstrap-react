@@ -8,6 +8,8 @@ import App from './App';
 import Users from './components/users/user.component';
 import Contact from './components/contacts/contacts.component';
 import routing from './Routes';
+//import NavBar from './components/navbar/navbar.component';
+
 
 ReactDOM.render(routing, document.getElementById('root'));
 // If you want your app to work offline and load faster, you can change

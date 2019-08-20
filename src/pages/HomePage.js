@@ -5,7 +5,7 @@ class HomePage extends React.Component {
   render() {
     return (
       <>
-        Hola HomePage
+        Hola /HomePage
       </>
     );
   }

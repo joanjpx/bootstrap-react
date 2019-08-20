@@ -5,7 +5,7 @@ import Routes from "./Routes";
 
 function App() {
   return (
-    "Hola Mundo"
+    <>Hola Mundo</>
   );
 }
 
