@@ -10,9 +10,9 @@ import Contact from './components/contacts/contacts.component';
 
 const routing = (
     <Router>
-        <Route path="/home" component={App} />
-        <Route path="/users" component={Users} />
-        <Route path="/contact" component={Contact} />
+        <Route exact path="/" component={App} />
+        <Route exact path="/users" component={Users} />
+        <Route exact path="/contact" component={Contact} />
     </Router>
 );
 ReactDOM.render(routing, document.getElementById('root'));
