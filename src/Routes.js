@@ -1,21 +1,17 @@
-import React from "react";
-import { Route, Switch } from "react-router-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
+//
+import App from './App';
+import Users from './components/users/user.component';
+import Contact from './components/contacts/contacts.component';
 
-import HomePage from "./pages/HomePage";
+const routing = (
+    <Router>
+        <Route exact path="/" component={App} />
+        <Route exact path="/users" component={Users} />
+        <Route exact path="/contacts" component={Contact} />
+    </Router>
+);
 
-class Routes extends React.Component {
-  render() {
-    return (
-      <Switch>
-        <Route exact path="/" component={HomePage} />        
-        <Route
-          render={function () {
-            return <h1>Not Found</h1>;
-          }}
-        />
-      </Switch>
-    );
-  }
-}
-
-export default Routes;
+export default routing;
